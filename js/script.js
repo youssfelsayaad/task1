@@ -67,8 +67,7 @@ const drawall = function (usersData) {
     });
     const td = createMyOwnEle(tr, "td", null, null);
 
-    const delBtn = createMyOwnEle(
-      td,
+    const delBtn = createMyOwnEle(      td,
       "button",
       "delete",
       "btn btn-danger mx-2"
