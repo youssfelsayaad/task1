@@ -1,4 +1,3 @@
-// const addUser = document.getElementById("addUser")
 let allUsers = [];
 const addUser = document.querySelector("#addUser");
 const editUser = document.querySelector("#edit-user");
@@ -7,7 +6,6 @@ const formHeaders = ["id", "userName", "email", "age", "status"];
 const dataWrap = document.querySelector("#dataWrap");
 const single = document.querySelector("#single");
 
-// handle status of the user
 const handleStatusBtn = function (class1, class2, state, msg, user) {
   this.textContent = msg;
   this.classList.remove(class1);
@@ -26,7 +24,6 @@ const createUserObj = function (formData) {
 };
 
 const storeToLocalStorage = function (key, data) {
-  //if there is an error set item with []
   let myData;
   try {
     myData = JSON.stringify(data);
